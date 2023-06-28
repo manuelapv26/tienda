@@ -1,37 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAQUILLAJE</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda</title>
+	<link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    
-    <main>
-    <h1>PRODUCTOS ANI-K</h1>
-    <img src="../source/base.jpg">
-    <img src="../source/Corrector.jpg">
-    <img src="../source/rubor.jpg">
-    <img src="../source/iluminador.jpg">
-    <img src="../source/lapiz.jpg">
-    <img src="../source/labial.jpg">
-    <img src="../source/lapiz.jpg">
-    <h3>PRODUCTOS TRENDY</h3>
-    <img src="../source/tonico.jpg">
-    <img src="../source/crema.jpg">
-    <img src="../source/protector.jpg">
-    <img src="../source/suero.jpg">
-    <h2>PRODUCTOS ATENEA</h2>
-    <img src="../source/ateneabase.jpg">
-    <img src="../source/correctoratenea.jpg">
-    <img src="../source/sombras.jpg">
-    <img src="../source/brochasatenea.jpg">
-        <h4>PRODUCTOS RUBY ROSE</h4>
-    <img src="../source/ruby2.jpg">
-    <img src="../source/ruby1.jpg">
-    <img src="../source/ruby3.jpg">
-    <img src="../source/ruby4.jpg">
-    </main>
+	<header>
+		<h3><a href="../html/index.html">PRODUCTOS</a></h3>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i>INICIO</i></a></li>
+                <li><a href="anika.html"><i>Ani-K</i></a></li>
+                <li><a href="trendy.html"><i>Trendy</i></a></li>
+                <li><a href="atenea.html"><i>Atenea</i></a></li>
+				<li><a href="ruby.rose.html"><i>Ruby Rose</i></a></li>
+
+
+				<div class="container-icon">
+					<div class="container-cart-icon">
+						<img src="../source/anadir-al-carrito.png" alt="carrito" class="icon-cart">
+
+						<div class="count-products">
+							<span id="contador-productos">0</span>
+						</div>
+					</div>
+				</div>
+			</ul>
+		</nav>
+
+		<div class="container-cart-products hidden-cart">
+			<div class="row-product hidden">
+				<div class="cart-product">
+					<div class="info-cart-product">
+						<span class="cantidad-producto-carrito">1</span>
+						<p class="titulo-producto-carrito">Zapatos Nike</p>
+						<span class="precio-producto-carrito">$80</span>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="icon-close">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</div>
+			</div>
+
+			<div class="cart-total hidden">
+				<h3>Total:</h3>
+				<span class="total-pagar">$200</span>
+			</div>
+			<p class="cart-empty">El carrito está vacío</p>
+		</div>
+	</header>
+
+
+	<div class="tienda">
+		<h1>PRODUCTOS</h1>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/Corrector.jpg" alt="base">
+				</figure>
+				<div class="info-product">
+					<h2>Corrector Ani-K</h2>
+					<p class="price">$18000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/base.jpg" alt="corrector">
+				</figure>
+				<div class="info-product">
+					<h2>Base Ani-K</h2>
+					<p class="price">$32000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/rubor.jpg" alt="rubor">
+				</figure>
+				<div class="info-product">
+					<h2>Rubor Ani-K</h2>
+					<p class="price">$20000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/lapiz.jpg" alt="Lapiz">
+				</figure>
+				<div class="info-product">
+					<h2>Lapiz Ani-K</h2>
+					<p class="price">$11000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/iluminador.jpg" alt="iluminador">
+				</figure>
+				<div class="info-product">
+					<h2>Iliminador Ani-K</h2>
+					<p class="price">$20000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/labial.jpg" alt="labial">
+				</figure>
+				<div class="info-product">
+					<h2>Labial Ani-K</h2>
+					<p class="price">$15000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/tonico.jpg" alt="tonico">
+				</figure>
+				<div class="info-product">
+					<h2>Tonico Trendy</h2>
+					<p class="price">$18000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/crema.jpg" alt="crema">
+				</figure>
+				<div class="info-product">
+					<h2>Crema Trendy</h2>
+					<p class="price">$25000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/protector-solar.jpg" alt="protector-solar">
+				</figure>
+				<div class="info-product">
+					<h2>Protector Solar Trendy</h2>
+					<p class="price">$20000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/suero.jpg" alt="suero">
+				</figure>
+				<div class="info-product">
+					<h2>Suero Facil Trendy</h2>
+					<p class="price">$10000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/correctoratenea.jpg" alt="corrector">
+				</figure>
+				<div class="info-product">
+					<h2>Corrector Atenea</h2>
+					<p class="price">$28000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ateneabase.jpg" alt="base">
+				</figure>
+				<div class="info-product">
+					<h2>Base Atenea</h2>
+					<p class="price">$45000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/sombras.jpg" alt="sombras">
+				</figure>
+				<div class="info-product">
+					<h2>Sombras Atenea</h2>
+					<p class="price">$80000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/brochasatenea.jpg" alt="brochasatenea">
+				</figure>
+				<div class="info-product">
+					<h2>Brochas Atenea</h2>
+					<p class="price">$115000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby1.jpg" alt="ruby1">
+				</figure>
+				<div class="info-product">
+					<h2>Rubor Liquidio Ruby Rose</h2>
+					<p class="price">$15000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby2.jpg" alt="base">
+				</figure>
+				<div class="info-product">
+					<h2>Tinta Ruby Rose</h2>
+					<p class="price">$27000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby3.jpg" alt="ruby3">
+				</figure>
+				<div class="info-product">
+					<h2>Base Liquida Ruby Rose</h2>
+					<p class="price">$20000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby4.jpg" alt="ruby4">
+				</figure>
+				<div class="info-product">
+					<h2>Lip Olil Ruby Rose</h2>
+					<p class="price">$10000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/index.js"></script>
 </body>
+
 </html>

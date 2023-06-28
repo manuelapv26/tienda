@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+	<header>
+		<h3><a href="../html/index.html">RUBY ROSE</a></h3>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i>INICIO</i></a></li>
+                <li><a href="anika.html"><i>Ani-K</i></a></li>
+                <li><a href="trendy.html"><i>Trendy</i></a></li>
+                <li><a href="atenea.html"><i>Atenea</i></a></li>
+				<li><a href="ruby.rose.html"><i>Ruby Rose</i></a></li>
+				
+
+				<div class="container-icon">
+					<div class="container-cart-icon">
+						<img src="../source/anadir-al-carrito.png" alt="carrito" class="icon-cart">
+
+						<div class="count-products">
+							<span id="contador-productos">0</span>
+						</div>
+					</div>
+				</div>
+			</ul>
+		</nav>
+
+		<div class="container-cart-products hidden-cart">
+			<div class="row-product hidden">
+				<div class="cart-product">
+					<div class="info-cart-product">
+						<span class="cantidad-producto-carrito">1</span>
+						<p class="titulo-producto-carrito">Zapatos Nike</p>
+						<span class="precio-producto-carrito">$80</span>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="icon-close">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</div>
+			</div>
+
+			<div class="cart-total hidden">
+				<h3>Total:</h3>
+				<span class="total-pagar">$200</span>
+			</div>
+			<p class="cart-empty">El carrito está vacío</p>
+		</div>
+	</header>
+
+
+	<div class="tienda">
+		<h1>PRODUCTOS RUBY ROSE</h1>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby1.jpg" alt="ruby1">
+				</figure>
+				<div class="info-product">
+					<h2>Rubor Liquidio Ruby Rose</h2>
+					<p class="price">$15000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby2.jpg" alt="base">
+				</figure>
+				<div class="info-product">
+					<h2>Tinta Ruby Rose</h2>
+					<p class="price">$27000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby3.jpg" alt="ruby3">
+				</figure>
+				<div class="info-product">
+					<h2>Base Liquida Ruby Rose</h2>
+					<p class="price">$20000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="card-image" src="../source/ruby4.jpg" alt="ruby4">
+				</figure>
+				<div class="info-product">
+					<h2>Lip Olil Ruby Rose</h2>
+					<p class="price">$10000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="../js/index.js"></script>
+</body>
+
+</html>
